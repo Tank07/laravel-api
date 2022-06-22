@@ -24,4 +24,6 @@ Route::get('/test', function(){
     return response()->json(compact('name'));
 });
 
-Route::get('/posts', 'Api\PostController@index');
+Route::namespace('Api')->group( function(){
+    Route::get('/posts', 'PostController@index');
+});

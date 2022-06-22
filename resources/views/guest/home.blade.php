@@ -9,8 +9,8 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
-        <!-- Styles -->
-        <style>
+        {{-- Commented default style and added Bootstrap link --}}
+        {{-- <style>
             html, body {
                 background-color: #fff;
                 color: #636b6f;
@@ -61,7 +61,10 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
-        </style>
+        </style>  --}}
+
+        <link rel="stylesheet" href="{{asset('css/app.css')}}">
+
     </head>
     <body>
         <div class="flex-center position-ref full-height">
